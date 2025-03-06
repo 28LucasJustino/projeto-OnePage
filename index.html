@@ -3,17 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <title>One Page Website</title>
 </head>
 <body>
     <header>
-
+        <div class="container">
+            <nav>
+                <div class="logo">Meu Site</div>
+                <ul class="menu" id="menu">
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <div class="menu-btn" id="menuBtn"><i class="fa-solid fa-bars"></i></div>
+            </nav>
+        </div>
     </header>
-    <main>
 
-    </main>
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Bem-vindo ao Meu Site</h1>
+                <p>Uma página única com tudo o que você precisa saber sobre nossos serviços e projetos.</p>
+                <a href="#contato" class="btn">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>descrição1</p>
+            <p></p>
+        </div>
+    </section>
+
+    <section class="services" id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>serviço1</h3>
+                    <p>descrição</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>serviço2</h3>
+                    <p>descrição</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"></div>
+                    <h3>serviço3</h3>
+                    <p>descrição</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2>Nosso Portfólio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="..." alt="Projeto 1">
+                </div>
+                <div class="portfolio-item">
+                    <img src="..." alt="Projeto 2">
+                </div>
+                <div class="portfolio-item">
+                    <img src="..." alt="Projeto 3">
+                </div>
+                <div class="portfolio-item">
+                    <img src="..." alt="Projeto 4">
+                </div>
+                <div class="portfolio-item">
+                    <img src="..." alt="Projeto 5">
+                </div>
+                <div class="portfolio-item">
+                    <img src="..." alt="Projeto 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <footer>
-        
+        <div class="container">
+            <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+        </div>
     </footer>
+    <script src="./js/index.js"></script>
+    <script src="https://kit.fontawesome.com/c5d333bbd9.js" crossorigin="anonymous"></script>
 </body>
 </html>
